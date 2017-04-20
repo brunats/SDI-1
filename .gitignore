@@ -45,3 +45,7 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+/T_08/WebChat_T/target/
+/T_08/ClientJava/nbproject/private/
+/T_08/ClientJava/build/
+/T_08/ClientHTML/nbproject/private/
