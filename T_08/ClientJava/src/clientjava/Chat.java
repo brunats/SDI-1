@@ -14,10 +14,10 @@ public class Chat {
      private static int lstMsg;
      
      Chat(){
-	  starter();
+	  //starter();
      }
      
-     private void starter(){
+     public void starter(){
 	  System.out.println("ocorreu algo 1");
 	  InterfaceChat.getInstance();
 	  lstMsg = getNumMsg();
