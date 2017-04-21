@@ -10,31 +10,36 @@ package clientjava;
  * @author Adriano ZJ
  */
 public class Chat {
-     
+
      private static int lstMsg;
-     
-     Chat(){
-	  //starter();
+
+     Chat() {
+	  starter();
      }
-     
-     public void starter(){
+
+     public void starter() {
 	  System.out.println("ocorreu algo 1");
 	  InterfaceChat.getInstance();
 	  lstMsg = getNumMsg();
 	  System.out.println("ocorreu algo 2");
-	  
-	  while (true) {
-	       receberMsg();
-	  }
+	  new Thread() {
+	       @Override
+	       public void run() {
+		    while (true) {
+			 receberMsg();
+		    }
+	       }
+	  }.start();
      }
-      /*
+
+     /*
      *	  Metodos de receber mensagens
       */
      public static void receberMsg() {
 	  int tam = getNumMsg();
 	  System.out.println(tam);
 	  String msg;
-	  if (lstMsg <= tam) {
+	  if (lstMsg < tam) {
 	       msg = receiveMsg(lstMsg);
 	       InterfaceChat.getInstance().addMenssagem(msg);
 	       lstMsg++;
@@ -46,7 +51,8 @@ public class Chat {
      * Metodos para enviar mensagens
       */
      public static void enviarMsg(String msg) {
-	  System.out.println(sendMsg2(msg));
+	  if(0 < msg.length())
+	       System.out.println(sendMsg2(msg));
      }
 
      private static int getNumMsg() {

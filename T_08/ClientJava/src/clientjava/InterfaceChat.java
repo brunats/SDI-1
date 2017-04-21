@@ -23,14 +23,13 @@ public class InterfaceChat extends javax.swing.JFrame {
       * Creates new form InterfaceChat
       */
      private InterfaceChat() {
-	  newChat();
+	  //newChat();
 	  initComponents();
 	  setVisible(true);
      }
      
      private void newChat(){
 	  new Thread(){
-	       @Override
 	       public void run(){
 		    Chat ch = new Chat();
 		    ch.starter();
@@ -95,9 +94,9 @@ public class InterfaceChat extends javax.swing.JFrame {
      }// </editor-fold>//GEN-END:initComponents
 
      private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-          // TODO add your handling code here:
+
 	  Chat.enviarMsg( jTextField1.getText());
-	  jTextField1.setText(null);
+	  jTextField1.setText("");
 	  Chat.receberMsg();
      }//GEN-LAST:event_jButton1ActionPerformed
 
