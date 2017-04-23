@@ -37,7 +37,7 @@ public class ChatService {
      @WebMethod(operationName = "ReceiveMsg")
      public String ReceiveMsg(@WebParam(name = "lstMsg") int lstMsg) {
 	  if(( lstMsg < 0) || ( lstMsg > mensagens.size()))
-	       return null;
+	       return "-";
 	  return mensagens.get(lstMsg);
      }
 
