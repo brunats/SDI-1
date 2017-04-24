@@ -67,4 +67,14 @@ public class ChatService {
      public int getNumMsg() {
 	  return mensagens.size();
      }
+
+     /**
+      * Operação de Web service
+      * @param clientOk
+      * @return 
+      */
+     @WebMethod(operationName = "ServerUp")
+     public Boolean ServerUp(@WebParam(name = "clientOk") boolean clientOk) {
+	  return clientOk;
+     }
 }

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
-    <system systemId="http://localhost:8080/WebChat_T/CalcTst00?wsdl" uri="xml-resources/web-service-references/CalcTst00/wsdl/localhost_8080/WebChat_T/CalcTst00.wsdl"/>
-    <system systemId="http://localhost:8080/WebChat_T/CalcTst00?xsd=1" uri="xml-resources/web-service-references/CalcTst00/wsdl/localhost_8080/WebChat_T/CalcTst00.xsd_1.xsd"/>
-    <system systemId="http://localhost:8080/WebChat_T/ChatService?wsdl" uri="xml-resources/web-service-references/ChatService/wsdl/localhost_8080/WebChat_T/ChatService.wsdl"/>
-    <system systemId="http://localhost:8080/WebChat_T/ChatService?xsd=1" uri="xml-resources/web-service-references/ChatService/wsdl/localhost_8080/WebChat_T/ChatService.xsd_1.xsd"/>
-</catalog>
